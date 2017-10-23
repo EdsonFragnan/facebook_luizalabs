@@ -1,57 +1,47 @@
-var logger = require('../servicos/logger.js');
+const logger = require('../servicos/logger.js');
 
-module.exports = function(app){
-  app.get('/pagamentos', function(req, res){
-    console.log('Recebida requisicao de teste na porta 3000.')
-    res.send('OK.');
-  });
-
-  app.get('/pagamentos/pagamento/:id', function(req, res){
-    var id = req.params.id;
-    console.log('consultando pagamento: ' + id);
-
-    logger.info('consultando pagamento: ' + id);
-
-    var memcachedClient = app.servicos.memcachedClient();
-
-    memcachedClient.get('pagamento-' + id, function(erro, retorno){
-      if (erro || !retorno){
-        console.log('MISS - chave nao encontrada');
-
-        var connection = app.persistencia.connectionFactory();
-        var pagamentoDao = new app.persistencia.PagamentoDao(connection);
-
-        pagamentoDao.buscaPorId(id, function(erro, resultado){
-          if(erro){
-            console.log('erro ao consultar no banco: ' + erro);
-            res.status(500).send(erro);
-            return;
-          }
-          console.log('pagamento encontrado: ' + JSON.stringify(resultado));
-          res.json(resultado);
-          return;
-        });
-        //HIT no cache
-      } else {
-        console.log('HIT - valor: ' + JSON.stringify(retorno));
-        res.json(retorno);
+module.exports = (app) => {
+  
+  app.get('/usuarios', (req, res) => {
+    const connection = app.persistencia.connectionFactory();
+    const usuarioDao = new app.persistencia.UsuarioDao(connection);
+    usuarioDao.buscaPorId((erro, resultado) => {
+      if(erro){
+        console.log('erro ao consultar no banco: ' + erro);
+        res.status(500).send(erro);
         return;
       }
+      res.json(resultado);
+      return;
     });
-
   });
 
-  app.delete('/pagamentos/pagamento/:id', function(req, res){
-    var pagamento = {};
-    var id = req.params.id;
+  app.get('/usuarios/usuario/:id', (req, res) => {
+    const id = req.params.id;
+    logger.info('consultando: ' + id);
+    const connection = app.persistencia.connectionFactory();
+    const usuarioDao = new app.persistencia.UsuarioDao(connection);
+    usuarioDao.buscaPorId(id, (erro, resultado) => {
+      if(erro){
+        res.status(500).send(erro);
+        return;
+      }
+      res.json(resultado);
+      return;
+    });
+  });
+
+  app.delete('/usuarios/usuario/:id', (req, res) => {
+    const usuario = {};
+    const id = req.params.id;
 
     pagamento.id = id;
     pagamento.status = 'CANCELADO';
 
-    var connection = app.persistencia.connectionFactory();
-    var pagamentoDao = new app.persistencia.PagamentoDao(connection);
+    const connection = app.persistencia.connectionFactory();
+    const pagamentoDao = new app.persistencia.PagamentoDao(connection);
 
-    pagamentoDao.atualiza(pagamento, function(erro){
+    pagamentoDao.atualiza(pagamento, (erro) => {
         if (erro){
           res.status(500).send(erro);
           return;
@@ -61,29 +51,9 @@ module.exports = function(app){
     });
   });
 
-  app.put('/pagamentos/pagamento/:id', function(req, res){
+  //Verificar se daqui para cima está funcionando!!!!
 
-    var pagamento = {};
-    var id = req.params.id;
-
-    pagamento.id = id;
-    pagamento.status = 'CONFIRMADO';
-
-    var connection = app.persistencia.connectionFactory();
-    var pagamentoDao = new app.persistencia.PagamentoDao(connection);
-
-    pagamentoDao.atualiza(pagamento, function(erro){
-        if (erro){
-          res.status(500).send(erro);
-          return;
-        }
-        console.log('pagamento criado');
-        res.send(pagamento);
-    });
-
-  });
-
-  app.post('/pagamentos/pagamento', function(req, res){
+  /*app.post('/usuarios/usuario', (req, res) => {
 
     req.assert("pagamento.forma_de_pagamento",
         "Forma de pagamento eh obrigatorio").notEmpty();
@@ -91,7 +61,7 @@ module.exports = function(app){
       "Valor eh obrigatorio e deve ser um decimal")
         .notEmpty().isFloat();
 
-    var erros = req.validationErrors();
+    const erros = req.validationErrors();
 
     if (erros){
       console.log('Erros de validacao encontrados');
@@ -99,16 +69,16 @@ module.exports = function(app){
       return;
     }
 
-    var pagamento = req.body["pagamento"];
+    const pagamento = req.body["pagamento"];
     console.log('processando uma requisicao de um novo pagamento');
 
     pagamento.status = 'CRIADO';
     pagamento.data = new Date;
 
-    var connection = app.persistencia.connectionFactory();
-    var pagamentoDao = new app.persistencia.PagamentoDao(connection);
+    const connection = app.persistencia.connectionFactory();
+    const pagamentoDao = new app.persistencia.PagamentoDao(connection);
 
-    pagamentoDao.salva(pagamento, function(erro, resultado){
+    pagamentoDao.salva(pagamento, (erro, resultado) => {
       if(erro){
         console.log('Erro ao inserir no banco:' + erro);
         res.status(500).send(erro);
@@ -116,20 +86,20 @@ module.exports = function(app){
       pagamento.id = resultado.insertId;
       console.log('pagamento criado');
 
-      var memcachedClient = app.servicos.memcachedClient();
+      const memcachedClient = app.servicos.memcachedClient();
       memcachedClient.set('pagamento-' + pagamento.id, pagamento,
-                60000, function(erro){
+                60000, (erro) => {
                   console.log('nova chave adicionada ao cache: pagamento-' + pagamento.id);
       });
 
       if (pagamento.forma_de_pagamento == 'cartao'){
-        var cartao = req.body["cartao"];
+        const cartao = req.body["cartao"];
         console.log(cartao);
 
-        var clienteCartoes = new app.servicos.clienteCartoes();
+        const clienteCartoes = new app.servicos.clienteCartoes();
 
         clienteCartoes.autoriza(cartao,
-            function(exception, request, response, retorno){
+            (exception, request, response, retorno) => {
               if(exception){
                 console.log(exception);
                 res.status(400).send(exception);
@@ -140,7 +110,7 @@ module.exports = function(app){
               res.location('/pagamentos/pagamento/' +
                     pagamento.id);
 
-              var response = {
+              const response = {
                 dados_do_pagamanto: pagamento,
                 cartao: retorno,
                 links: [
@@ -168,7 +138,7 @@ module.exports = function(app){
         res.location('/pagamentos/pagamento/' +
               pagamento.id);
 
-        var response = {
+        const response = {
           dados_do_pagamanto: pagamento,
           links: [
             {
@@ -191,5 +161,5 @@ module.exports = function(app){
     }
     });
 
-  });
+  });*/
 }

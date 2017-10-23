@@ -1,16 +1,16 @@
-var express = require('express');
-var consign = require('consign');
-var bodyParser = require('body-parser');
-var expressValidator = require('express-validator');
-var morgan = require('morgan');
-var logger = require('../servicos/logger.js');
+const express = require('express');
+const consign = require('consign');
+const bodyParser = require('body-parser');
+const expressValidator = require('express-validator');
+const morgan = require('morgan');
+const logger = require('../servicos/logger.js');
 
-module.exports = function(){
-  var app = express();
+module.exports = () => {
+  const app = express();
 
   app.use(morgan("common", {
     stream: {
-      write: function(mensagem){
+      write: (mensagem) => {
           logger.info(mensagem);
       }
     }
@@ -28,4 +28,4 @@ module.exports = function(){
    .into(app);
 
   return app;
-}
+};

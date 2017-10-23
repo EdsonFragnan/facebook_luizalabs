@@ -9,7 +9,7 @@ module.exports = new winston.Logger({
   transports: [
     new winston.transports.File({
       level: "info",
-      filename: "logs/payfast.log",
+      filename: "logs/facebook_luizalabs.log",
       maxsize: 100000,
       maxFiles: 10
     })
