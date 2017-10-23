@@ -1,14 +1,14 @@
 const logger = require('../servicos/logger.js');
-
+const mensagem_erro = 'Erro ao consultar no banco.';
 module.exports = (app) => {
   
   app.get('/usuarios', (req, res) => {
     const connection = app.persistencia.connectionFactory();
     const usuarioDao = new app.persistencia.UsuarioDao(connection);
-    usuarioDao.buscaPorId((erro, resultado) => {
+    usuarioDao.lista((erro, resultado) => {
       if(erro){
-        console.log('erro ao consultar no banco: ' + erro);
-        res.status(500).send(erro);
+        console.log(mensagem_erro + ': ' + erro);
+        res.status(412).json({msg: mensagem_erro});
         return;
       }
       res.json(resultado);
@@ -23,7 +23,8 @@ module.exports = (app) => {
     const usuarioDao = new app.persistencia.UsuarioDao(connection);
     usuarioDao.buscaPorId(id, (erro, resultado) => {
       if(erro){
-        res.status(500).send(erro);
+        console.log(mensagem_erro + ': ' + erro);
+        res.status(412).json({msg: mensagem_erro}); 
         return;
       }
       res.json(resultado);
@@ -32,22 +33,18 @@ module.exports = (app) => {
   });
 
   app.delete('/usuarios/usuario/:id', (req, res) => {
-    const usuario = {};
     const id = req.params.id;
-
-    pagamento.id = id;
-    pagamento.status = 'CANCELADO';
-
     const connection = app.persistencia.connectionFactory();
-    const pagamentoDao = new app.persistencia.PagamentoDao(connection);
+    const usuarioDao = new app.persistencia.UsuarioDao(connection);
 
-    pagamentoDao.atualiza(pagamento, (erro) => {
+    usuarioDao.atualiza(id, (erro) => {
         if (erro){
-          res.status(500).send(erro);
+          console.log(mensagem_erro + ': ' + erro);
+          res.status(412).json({msg: mensagem_erro});
           return;
         }
-        console.log('pagamento cancelado');
-        res.status(204).send(pagamento);
+        console.log('Usuário deletado.');
+        res.status(204);
     });
   });
 
@@ -76,9 +73,9 @@ module.exports = (app) => {
     pagamento.data = new Date;
 
     const connection = app.persistencia.connectionFactory();
-    const pagamentoDao = new app.persistencia.PagamentoDao(connection);
+    const UsuarioDao = new app.persistencia.UsuarioDao(connection);
 
-    pagamentoDao.salva(pagamento, (erro, resultado) => {
+    UsuarioDao.salva(pagamento, (erro, resultado) => {
       if(erro){
         console.log('Erro ao inserir no banco:' + erro);
         res.status(500).send(erro);
