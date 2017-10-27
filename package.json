@@ -33,9 +33,7 @@
     "mocha": "^4.0.1",
     "morgan": "^1.7.0",
     "mysql": "^2.11.1",
-    "oauth2": "0.0.1",
     "request": "^2.83.0",
-    "restify": "^4.1.1",
     "supertest": "^3.0.0",
     "winston": "^2.2.0"
   },
