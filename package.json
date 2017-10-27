@@ -4,23 +4,53 @@
   "description": "Cadastro de usuário facebook.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run apidoc && node index.js",
+    "test": "set NODE_ENV=test && mocha ./test/*/*.js --reporter spec",
+    "coverage": "set NODE_ENV=test && nyc mocha ./test/*/*.js --reporter spec",
+    "qualiCode_gulp": "gulp",
+    "apidoc": "apidoc -i ./routes -o public/apidoc"
+  },
+  "apidoc": {
+    "name": "Documentação - API Teste Luizalabs"
   },
   "keywords": [
     "api",
-    "gateway",
     "javascript"
   ],
   "author": "Edson Luiz Fragnan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "chai": "^4.1.2",
     "consign": "^0.1.2",
     "express": "^4.14.0",
     "express-validator": "^2.20.8",
+    "fb": "^2.0.0",
+    "gulp": "^3.9.1",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "jslint": "^0.11.0",
+    "mocha": "^4.0.1",
     "morgan": "^1.7.0",
     "mysql": "^2.11.1",
+    "oauth2": "0.0.1",
+    "request": "^2.83.0",
     "restify": "^4.1.1",
+    "supertest": "^3.0.0",
     "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "supertest": "^3.0.0"
   }
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const consign = require('consign');
 const bodyParser = require('body-parser');
@@ -18,14 +20,22 @@ module.exports = () => {
 
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
-
   app.use(expressValidator());
+  app.use(express.static('public'));
 
-  consign()
-   .include('controllers')
+  consign({verbose: false})
+   .include('routes')
    .then('persistencia')
    .then('servicos')
    .into(app);
+
+   app.use(function(req, res, next){
+      res.status(404).json({msg: 'Rota não encontrada.'});
+    });
+
+    app.use(function(error,req, res, next){
+      res.status(500).json({msg: 'Erro interno no servidor.'});
+    });
 
   return app;
 };

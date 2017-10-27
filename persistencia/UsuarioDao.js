@@ -1,19 +1,28 @@
-function UsuarioDao(connection) {
-    this._connection = connection;
+"use strict";
+
+class UsuarioDao {
+
+    constructor(connection) {
+      this._connection = connection;
+    }
+
+    salva (usuario,callback) {
+      this._connection.query('INSERT INTO usuario SET ?', usuario, callback);
+    }
+
+    lista (callback) {
+      this._connection.query('select * from usuario', callback);
+    }
+
+    deleta (facebookId, callback) {
+      this._connection.query("DELETE FROM usuario where facebookId = ?", [facebookId], callback);
+    }
+
+    buscaPorId (facebookId,callback) {
+      this._connection.query("select * from usuario where facebookId = ?", [facebookId], callback);
+    }
 }
 
-UsuarioDao.prototype.salva = function(usuario,callback) {
-    this._connection.query('INSERT INTO usuario SET ?', usuario, callback);
-}
-
-UsuarioDao.prototype.lista = function(callback) {
-    this._connection.query('select * from usuario',callback);
-}
-
-UsuarioDao.prototype.buscaPorId = function (id,callback) {
-    this._connection.query("select * from usuario where id = ?",[id],callback);
-}
-
-module.exports = function(){
+module.exports = () => {
     return UsuarioDao;
 };

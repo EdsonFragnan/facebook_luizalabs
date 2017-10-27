@@ -1,5 +1,7 @@
-var winston = require('winston');
-var fs = require('fs');
+"use strict";
+
+const winston = require('winston');
+const fs = require('fs');
 
 if(!fs.existsSync('logs')){
   fs.mkdirSync('logs');
