@@ -77,7 +77,7 @@
       "examples": [
         {
           "title": "Sucesso",
-          "content": "HTTP/1.1 200 OK\n[{\n   \"facebookId\": \"100001718509097\",\n   \"name\": \"Edson Fragnan\",\n   \"username\": \"Edson Fragnan\",\n   \"gender\": \"não especificado\"\n}]",
+          "content": "HTTP/1.1 200 OK\n[{\n    \"facebookId\": \"100001718509097\",\n    \"first_name\": \"Edson\",\n    \"middle_name\": \"Luiz\",\n    \"last_name\": \"Fragnan\",\n    \"name\": \"Edson Fragnan\",\n    \"birthday\": \"não especificado\",\n    \"hometown\": \"não especificado\",\n    \"locale\": \"não especificado\",\n    \"gender\": \"não especificado\",\n    \"public_key\": \"não especificado\",\n    \"website\": \"não especificado\"\n}]",
           "type": "json"
         }
       ]
@@ -121,7 +121,7 @@
       "examples": [
         {
           "title": "Sucesso",
-          "content": "HTTP/1.1 200 OK\n{\n   \"facebookId\": \"100001718509097\",\n   \"name\": \"Edson Fragnan\",\n   \"username\": \"Edson Fragnan\",\n   \"gender\": \"não especificado\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"facebookId\": \"100001718509097\",\n    \"first_name\": \"Edson\",\n    \"middle_name\": \"Luiz\",\n    \"last_name\": \"Fragnan\",\n    \"name\": \"Edson Fragnan\",\n    \"birthday\": \"não especificado\",\n    \"hometown\": \"não especificado\",\n    \"locale\": \"não especificado\",\n    \"gender\": \"não especificado\",\n    \"public_key\": \"não especificado\",\n    \"website\": \"não especificado\"\n}",
           "type": "json"
         }
       ]
@@ -160,7 +160,7 @@
       "examples": [
         {
           "title": "Sucesso",
-          "content": "HTTP/1.1 200 OK\n{\n   \"facebookId\": \"100001718509097\",\n   \"name\": \"Edson Fragnan\",\n   \"username\": \"Edson Fragnan\",\n   \"gender\": \"não especificado\"\n}",
+          "content": "HTTP/1.1 200 OK\n{ \n    \"facebookId\": \"100001718509097\",\n    \"first_name\": \"Edson\",\n    \"middle_name\": \"Luiz\",\n    \"last_name\": \"Fragnan\",\n    \"name\": \"Edson Fragnan\",\n    \"birthday\": \"não especificado\",\n    \"hometown\": \"não especificado\",\n    \"locale\": \"não especificado\",\n    \"gender\": \"não especificado\",\n    \"public_key\": \"não especificado\",\n    \"website\": \"não especificado\"\n}",
           "type": "json"
         }
       ]
@@ -204,7 +204,7 @@
       "examples": [
         {
           "title": "Sucesso",
-          "content": "HTTP/1.1 200 OK\n{\n   \"facebookId\": \"100001718509097\",\n   \"name\": \"Edson Fragnan\",\n   \"username\": \"Edson Fragnan\",\n   \"gender\": \"não especificado\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"facebookId\": \"100001718509097\",\n    \"first_name\": \"Edson\",\n    \"middle_name\": \"Luiz\",\n    \"last_name\": \"Fragnan\",\n    \"name\": \"Edson Fragnan\",\n    \"birthday\": \"não especificado\",\n    \"hometown\": \"não especificado\",\n    \"locale\": \"não especificado\",\n    \"gender\": \"não especificado\",\n    \"public_key\": \"não especificado\",\n    \"website\": \"não especificado\"\n}",
           "type": "json"
         }
       ]

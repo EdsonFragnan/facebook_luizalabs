@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class UsuarioDao {
 
@@ -15,11 +15,11 @@ class UsuarioDao {
     }
 
     deleta (facebookId, callback) {
-      this._connection.query("DELETE FROM usuario where facebookId = ?", [facebookId], callback);
+      this._connection.query('DELETE FROM usuario where facebookId = ?', [facebookId], callback);
     }
 
     buscaPorId (facebookId,callback) {
-      this._connection.query("select * from usuario where facebookId = ?", [facebookId], callback);
+      this._connection.query('select * from usuario where facebookId = ?', [facebookId], callback);
     }
 }
 

@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
-describe("GET /", (done) => {
+describe('GET /', (done) => {
 
   afterEach(function () {
     process.exit(0);
   });
 
-  it("Retorna status da rota.", (done) => {
-    request.get("/")
+  it('Retorna status da rota.', (done) => {
+    request.get('/')
       .expect(200)
       .end((err, res) => {
         const expected = {status: 'API LuizaLabs Facebook.'};

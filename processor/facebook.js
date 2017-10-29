@@ -1,7 +1,8 @@
-"use strict";
+'use strict';
 
 const FB = require('fb');
-let auth = require('./../config/auth.js');
+const logger = require('./../servicos/logger.js');
+const auth = require('./../config/auth.js');
 
 module.exports.processor = (id, callback) => {
   FB.api('oauth/access_token', {
@@ -11,22 +12,46 @@ module.exports.processor = (id, callback) => {
     user: id
   }, (res) => {
     if(!res || res.error) {
+      logger.info(res.error);
       callback(res.error, null);
     }
     const token = res.access_token;
     FB.setAccessToken(token);
-    FB.api(id, 'get', {fields: ['id', 'name', 'gender']}, (res) => {
+    FB.api(id, 'get', {fields: [
+      'id',
+      'first_name',
+      'middle_name',
+      'last_name',
+      'name',
+      'birthday',
+      'hometown',
+      'locale',
+      'gender',
+      'public_key',
+      'website'
+    ]}, (res) => {
       if(!res || res.error) {
+        logger.info(res.error);
         callback(res.error, null);
       } else {
         const request = {
-          username: res.username === undefined ? res.name : res.username,
-          facebookId: parseInt(res.id),
-          name: res.name,
-          gender: res.gender === undefined ? 'não especificado' : res.gender
+          facebookId: res.id === undefined ? 'não especificado' : res.id,
+          first_name: res.first_name === undefined ? 'não especificado' : res.first_name,
+          middle_name: res.middle_name === undefined ? 'não especificado' : res.middle_name,
+          last_name: res.last_name === undefined ? 'não especificado' : res.last_name,
+          name: res.name === undefined ? 'não especificado' : res.name,
+          birthday: res.birthday === undefined ? 'não especificado' : res.birthday,
+          hometown: res.hometown === undefined ? 'não especificado' : res.hometown,
+          locale: res.locale === undefined ? 'não especificado' : res.locale,
+          gender: res.gender === undefined ? 'não especificado' : res.gender,
+          public_key: res.public_key === undefined ? 'não especificado' : res.public_key,
+          website: res.website === undefined ? 'não especificado' : res.website
         };
         callback(null, request);
       }
     });
   });
 };
+
+
+

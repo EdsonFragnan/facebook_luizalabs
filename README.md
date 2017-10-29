@@ -9,12 +9,10 @@
 # Qualidade de código APP
 - npm run qualiCode_gulp (Dependência gulp.js instalado).
 # Banco de dados MySQL
-- O usuário deverá criar duas bases de dados, para não misturar dados.
-- Observação: As tabelas o APP cria automático.
+- A aplicação irá criar duas bases de dados, para não misturar dados.
+- A aplicação que irá criar as tabelas.
 - Ambiente test: facebook_luizalabs_test
-- create database facebook_luizalabs_test
 - Ambiente DEV: facebook_luizalabs
-- create database facebook_luizalabs
 # Documentação rotas
 - Navegador: http://localhost:55000/apidoc/
 # Teste em Desenvolvimento

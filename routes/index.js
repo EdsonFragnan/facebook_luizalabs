@@ -1,4 +1,6 @@
-"use strict";
+'use strict';
+
+const logger = require('../servicos/logger.js');
 
 module.exports = app => {
   /**
@@ -12,6 +14,7 @@ module.exports = app => {
    *    }
    */
   app.get('/', (req, res) => {
+    logger.info('Rota acessada: / - GET');
     res.json({status: 'API LuizaLabs Facebook.'});
   });
 };

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const express = require('express');
 const consign = require('consign');
@@ -29,13 +29,13 @@ module.exports = () => {
    .then('servicos')
    .into(app);
 
-   app.use(function(req, res, next){
-      res.status(404).json({msg: 'Rota não encontrada.'});
-    });
+  app.use((req, res, next) => {
+    res.status(404).json({msg: 'Rota não encontrada.'});
+  });
 
-    app.use(function(error,req, res, next){
-      res.status(500).json({msg: 'Erro interno no servidor.'});
-    });
+  app.use((error, req, res, next) => {
+    res.status(500).json({msg: 'Erro interno no servidor.'});
+  });
 
   return app;
 };

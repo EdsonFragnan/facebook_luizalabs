@@ -1,5 +1,6 @@
-"use strict";
+'use strict';
 
+const logger = require('../servicos/logger.js');
 const ctrlGetUsuarios = require('./../controllers/getUsuarios');
 const ctrlGetUsuario = require('./../controllers/getUsuario');
 const ctrlGetUsuarioFacebook = require('./../controllers/getUsuarioFacebook');
@@ -14,10 +15,17 @@ module.exports = (app) => {
    * @apiSuccessExample {json} Sucesso
    *    HTTP/1.1 200 OK
    *    [{
-   *       "facebookId": "100001718509097",
-   *       "name": "Edson Fragnan",
-   *       "username": "Edson Fragnan",
-   *       "gender": "não especificado"
+   *        "facebookId": "100001718509097",
+   *        "first_name": "Edson",
+   *        "middle_name": "Luiz",
+   *        "last_name": "Fragnan",
+   *        "name": "Edson Fragnan",
+   *        "birthday": "não especificado",
+   *        "hometown": "não especificado",
+   *        "locale": "não especificado",
+   *        "gender": "não especificado",
+   *        "public_key": "não especificado",
+   *        "website": "não especificado"
    *    }]
    * @apiErrorExample {json} Erro de consulta
    *    HTTP/1.1 412
@@ -25,6 +33,7 @@ module.exports = (app) => {
    *    HTTP/1.1 204
    */
   app.get('/usuarios', (req, res) => {
+    logger.info('Rota acessada: /usuarios - GET');
     ctrlGetUsuarios(app, res);
   });
 
@@ -34,11 +43,18 @@ module.exports = (app) => {
    * @apiSuccess {String} id id de registro
    * @apiSuccessExample {json} Sucesso
    *    HTTP/1.1 200 OK
-   *    {
-   *       "facebookId": "100001718509097",
-   *       "name": "Edson Fragnan",
-   *       "username": "Edson Fragnan",
-   *       "gender": "não especificado"
+   *    { 
+   *        "facebookId": "100001718509097",
+   *        "first_name": "Edson",
+   *        "middle_name": "Luiz",
+   *        "last_name": "Fragnan",
+   *        "name": "Edson Fragnan",
+   *        "birthday": "não especificado",
+   *        "hometown": "não especificado",
+   *        "locale": "não especificado",
+   *        "gender": "não especificado",
+   *        "public_key": "não especificado",
+   *        "website": "não especificado"
    *    }
    * @apiErrorExample {json} Erro de consulta
    *    HTTP/1.1 412
@@ -46,6 +62,7 @@ module.exports = (app) => {
    *    HTTP/1.1 204
    */
   app.get('/usuarios/usuario/:id', (req, res) => {
+    logger.info('Rota acessada: /usuarios/usuario/:id - GET');
     ctrlGetUsuario(app, req, res);
   });
 
@@ -56,15 +73,23 @@ module.exports = (app) => {
    * @apiSuccessExample {json} Sucesso
    *    HTTP/1.1 200 OK
    *    {
-   *       "facebookId": "100001718509097",
-   *       "name": "Edson Fragnan",
-   *       "username": "Edson Fragnan",
-   *       "gender": "não especificado"
+   *        "facebookId": "100001718509097",
+   *        "first_name": "Edson",
+   *        "middle_name": "Luiz",
+   *        "last_name": "Fragnan",
+   *        "name": "Edson Fragnan",
+   *        "birthday": "não especificado",
+   *        "hometown": "não especificado",
+   *        "locale": "não especificado",
+   *        "gender": "não especificado",
+   *        "public_key": "não especificado",
+   *        "website": "não especificado"
    *    }
    * @apiErrorExample {json} Usuário não encontrado no facebook.
    *    HTTP/1.1 404
    */
   app.get('/usuario/facebook/:id', (req, res) => {
+    logger.info('Rota acessada: /usuario/facebook/:id - GET');
     ctrlGetUsuarioFacebook(app, req, res);
   });
 
@@ -78,6 +103,7 @@ module.exports = (app) => {
    *    HTTP/1.1 404
    */
   app.delete('/usuarios/usuario/:id', (req, res) => {
+    logger.info('Rota acessada: /usuarios/usuario/:id - DELETE');
     ctrlDelUsuario(app, req, res);
   });
 
@@ -88,10 +114,17 @@ module.exports = (app) => {
    * @apiSuccessExample {json} Sucesso
    *    HTTP/1.1 200 OK
    *    {
-   *       "facebookId": "100001718509097",
-   *       "name": "Edson Fragnan",
-   *       "username": "Edson Fragnan",
-   *       "gender": "não especificado"
+   *        "facebookId": "100001718509097",
+   *        "first_name": "Edson",
+   *        "middle_name": "Luiz",
+   *        "last_name": "Fragnan",
+   *        "name": "Edson Fragnan",
+   *        "birthday": "não especificado",
+   *        "hometown": "não especificado",
+   *        "locale": "não especificado",
+   *        "gender": "não especificado",
+   *        "public_key": "não especificado",
+   *        "website": "não especificado"
    *    }
    * @apiErrorExample {json} Usuário facebook não encontrado.
    *    HTTP/1.1 404
@@ -101,6 +134,7 @@ module.exports = (app) => {
    *    HTTP/1.1 412
    */
   app.post('/usuarios/usuario/:id', (req, res) => {
+    logger.info('Rota acessada: /usuarios/usuario/:id - POST');
     ctrlPostUsuario(app, req, res);
   });
 
