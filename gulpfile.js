@@ -10,7 +10,7 @@ gulp.task('lint', () => {
   .pipe(jshint.reporter('default'));
 });
 
-const cliente = function(){
+const cliente = () => {
   gulp.run('lint');
 };
 
