@@ -21,7 +21,7 @@
 - ROTA - GET único usuário facebook - curl ­http://localhost:55000/usuarios/facebook/670286562
 - ROTA - DELETE usuário na base - curl ­-X DELETE http://localhost:55000/usuarios/usuario/670286562
 - ROTA - POST Grava usuário na base - curl -­X POST -­F id=670286562 http://localhost:55000/usuarios/usuario/
-# Observações sobre o retorno de dados do facebook:
+# Observações sobre o retorno de dados do facebook
 - Certas informações do usuário, para serem retornadas, precisam de liberação do usuário.
 - gender - Precisa das credenciais de login do usuário. 
 - username - Este campo não está scopo de fields da plataforma, foi retirado.
