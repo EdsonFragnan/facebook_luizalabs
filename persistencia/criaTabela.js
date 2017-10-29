@@ -22,7 +22,7 @@ module.exports = (app) => {
 
     connection.query(sql, (error, results, fields) => {
       if(error) return logger.info(error);
-      logger.info('Tabela criada.');
+      logger.info('Tabela usuario criada.');
     });
   };
   createTable(connection);

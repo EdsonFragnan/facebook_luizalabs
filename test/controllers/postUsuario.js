@@ -33,7 +33,7 @@ describe('POST /usuarios/usuario/:id', (done) => {
 
   describe('status 400', () => {
     it('ID facebook inválido.', (done) => {
-      let id_400 = 100001718509097000000;
+      let id_400 = 1000017185090971234567;
       request.get('/usuarios/usuario/' + id_400)
         .expect(400, done);
     });
