@@ -24,6 +24,6 @@
 # Observações sobre o retorno de dados do facebook
 - Certas informações do usuário, para serem retornadas, precisam de liberação do usuário.
 - gender - Precisa das credenciais de login do usuário. 
-- username - Este campo não está scopo de fields da plataforma, foi retirado.
+- username - Este campo não está mais no scopo de fields da plataforma do facebook, foi retirado.
 - Mantive os campos e inseri outros, os campos que não estiverem liberados pelo usuário, serão tratados
 com um valor de "não especificado".
