@@ -1,0 +1,239 @@
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:38.829Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:39.079Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:39.095Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:39.095Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:39.095Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:18:39.173Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:39.173Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:40.126Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:40.126Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:18:41.131Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:41.131Z"}
+[{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"}]
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:41 +0000] \"DELETE /usuarios/usuario/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:18:41.475Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:41 +0000] \"DELETE /usuario/facebook/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:18:41.522Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:18:43.428Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:18:43.475Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:18:43.537Z"}
+{"level":"info","message":"Usuário deletado.","timestamp":"2017-10-29T17:18:43.850Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:43 +0000] \"DELETE /usuarios/usuario/100001718509097 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:18:43.850Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:44 +0000] \"GET /usuario/facebook/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:18:44.147Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:18:44.162Z"}
+[{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"}]
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:44 +0000] \"GET /usuario/facebook/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:18:44.162Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:18:44.162Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"FYUsrqtj9cd","level":"info","timestamp":"2017-10-29T17:18:44.615Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"FYUsrqtj9cd","level":"info","timestamp":"2017-10-29T17:18:44.615Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:44 +0000] \"GET /usuario/facebook/000 HTTP/1.1\" 404 -\n","timestamp":"2017-10-29T17:18:44.615Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:18:45.053Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:45.053Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:45 +0000] \"GET /usuarios HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:18:45.115Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:18:45.365Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:45.365Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:18:45.381Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:45 +0000] \"GET /usuarios HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:18:45.381Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:18:45.397Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:45.397Z"}
+{"level":"info","message":"Usuário inserido na base.","timestamp":"2017-10-29T17:18:46.194Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:46 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:18:46.194Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:18:46.209Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:46.209Z"}
+[{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"}]
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:46 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:18:46.209Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:46 +0000] \"POST /usuario/usuario/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:18:46.225Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:18:46.225Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:18:46.225Z"}
+{"message":"ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'","stack":"Error: ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'\n    at Query.Sequence._packetToError (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:52:14)\n    at Query.ErrorPacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:145:48)\n    at Connection.query (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:208:25)\n    at UsuarioDao.salva (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\persistencia\\UsuarioDao.js:1:2225)\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\controllers\\postUsuario.js:1:4458\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\processor\\facebook.js:1:7949\n    at Request._callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\lib\\fb.js:501:5)\n    at Request.self.callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:186:22)\n    at emitTwo (events.js:87:13)\n    at Request.emit (events.js:172:7)\n    at Request.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1163:10)\n    at emitOne (events.js:77:13)\n    at Request.emit (events.js:169:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1085:12)\n    at IncomingMessage.g (events.js:260:16)\n    at emitNone (events.js:72:20)\n    at IncomingMessage.emit (events.js:166:7)\n    at endReadableNT (_stream_readable.js:921:12)\n    at nextTickCallbackWith2Args (node.js:442:9)\n    at process._tickCallback (node.js:356:17)","code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry '100001718509097' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"INSERT INTO usuario SET `facebookId` = '100001718509097', `first_name` = 'Edson', `middle_name` = 'não especificado', `last_name` = 'Fragnan', `name` = 'Edson Fragnan', `birthday` = 'não especificado', `hometown` = 'não especificado', `locale` = 'não especificado', `gender` = 'não especificado', `public_key` = 'não especificado', `website` = 'não especificado'","level":"info","timestamp":"2017-10-29T17:18:46.787Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:46 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 412 -\n","timestamp":"2017-10-29T17:18:46.787Z"}
+{"level":"info","message":"Rota acessada: / - GET","timestamp":"2017-10-29T17:18:46.803Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:18:46 +0000] \"GET / HTTP/1.1\" 200 36\n","timestamp":"2017-10-29T17:18:46.803Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.319Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.350Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.350Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.350Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.350Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.397Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.397Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:19:06.397Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:19:06.413Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.413Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:19:06.413Z"}
+{"level":"info","message":"Usuário deletado.","timestamp":"2017-10-29T17:19:06.507Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"DELETE /usuarios/usuario/100001718509097 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:19:06.507Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:19:06.522Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.522Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:19:06.522Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"DELETE /usuarios/usuario/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:19:06.522Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"DELETE /usuario/facebook/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:19:06.538Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:19:06.679Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.679Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"GET /usuarios/usuario/100001718509097 HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:19:06.679Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:19:06.694Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.694Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"},"level":"info","message":"","timestamp":"2017-10-29T17:19:06.694Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:19:06.694Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:19:06.694Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:06.694Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:19:06.741Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:06 +0000] \"GET /usuarios/usuario/000 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:19:06.741Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:19:06.741Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:07 +0000] \"GET /usuario/facebook/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:19:07.272Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:19:07.288Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:19:07.288Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:07 +0000] \"GET /usuario/facebook/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:19:07.288Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:19:07.288Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"CO3Urqnu5Ko","level":"info","timestamp":"2017-10-29T17:19:07.741Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"CO3Urqnu5Ko","level":"info","timestamp":"2017-10-29T17:19:07.741Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:07 +0000] \"GET /usuario/facebook/000 HTTP/1.1\" 404 -\n","timestamp":"2017-10-29T17:19:07.741Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:19:07.804Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:07.804Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:07 +0000] \"GET /usuarios HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:19:07.819Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:19:07.866Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:07.866Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:19:07.882Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:07 +0000] \"GET /usuarios HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:19:07.882Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:19:07.897Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:07.897Z"}
+{"level":"info","message":"Usuário inserido na base.","timestamp":"2017-10-29T17:19:08.382Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:08 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:19:08.382Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:19:08.397Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:08.397Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"},"level":"info","message":"","timestamp":"2017-10-29T17:19:08.397Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:08 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:19:08.397Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:08 +0000] \"POST /usuario/usuario/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:19:08.429Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:19:08.429Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:19:08.429Z"}
+{"message":"ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'","stack":"Error: ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'\n    at Query.Sequence._packetToError (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:52:14)\n    at Query.ErrorPacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:145:48)\n    at Connection.query (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:208:25)\n    at UsuarioDao.salva (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\persistencia\\UsuarioDao.js:1:2225)\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\controllers\\postUsuario.js:1:4458\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\processor\\facebook.js:1:7949\n    at Request._callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\lib\\fb.js:501:5)\n    at Request.self.callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:186:22)\n    at emitTwo (events.js:87:13)\n    at Request.emit (events.js:172:7)\n    at Request.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1163:10)\n    at emitOne (events.js:77:13)\n    at Request.emit (events.js:169:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1085:12)\n    at IncomingMessage.g (events.js:260:16)\n    at emitNone (events.js:72:20)\n    at IncomingMessage.emit (events.js:166:7)\n    at endReadableNT (_stream_readable.js:921:12)\n    at nextTickCallbackWith2Args (node.js:442:9)\n    at process._tickCallback (node.js:356:17)","code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry '100001718509097' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"INSERT INTO usuario SET `facebookId` = '100001718509097', `first_name` = 'Edson', `middle_name` = 'não especificado', `last_name` = 'Fragnan', `name` = 'Edson Fragnan', `birthday` = 'não especificado', `hometown` = 'não especificado', `locale` = 'não especificado', `gender` = 'não especificado', `public_key` = 'não especificado', `website` = 'não especificado'","level":"info","timestamp":"2017-10-29T17:19:08.929Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:08 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 412 -\n","timestamp":"2017-10-29T17:19:08.929Z"}
+{"level":"info","message":"Rota acessada: / - GET","timestamp":"2017-10-29T17:19:08.944Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:19:08 +0000] \"GET / HTTP/1.1\" 200 36\n","timestamp":"2017-10-29T17:19:08.944Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs","timestamp":"2017-10-29T17:19:29.026Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs","timestamp":"2017-10-29T17:19:29.057Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs","timestamp":"2017-10-29T17:19:29.057Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:19:29.057Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:19:29.057Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs","timestamp":"2017-10-29T17:23:12.194Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs","timestamp":"2017-10-29T17:23:12.225Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs","timestamp":"2017-10-29T17:23:12.225Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:23:12.225Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:23:12.241Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.929Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.960Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.960Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.960Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.960Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.991Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:42.991Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:23:42.991Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:23:43.007Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:43.007Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:23:43.023Z"}
+{"level":"info","message":"Usuário deletado.","timestamp":"2017-10-29T17:23:43.070Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"DELETE /usuarios/usuario/100001718509097 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:23:43.070Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:23:43.085Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:43.085Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:23:43.085Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"DELETE /usuarios/usuario/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:23:43.085Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"DELETE /usuario/facebook/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:23:43.101Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:23:43.148Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:43.148Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"GET /usuarios/usuario/100001718509097 HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:43.163Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"},"level":"info","message":"","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:43.163Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:23:43.179Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"GET /usuarios/usuario/000 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:23:43.179Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:23:43.179Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"GET /usuario/facebook/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:23:43.679Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:23:43.695Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:23:43.695Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:43 +0000] \"GET /usuario/facebook/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:23:43.695Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:23:43.695Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"HUWRgcoK9u+","level":"info","timestamp":"2017-10-29T17:23:44.132Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"HUWRgcoK9u+","level":"info","timestamp":"2017-10-29T17:23:44.132Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"GET /usuario/facebook/000 HTTP/1.1\" 404 -\n","timestamp":"2017-10-29T17:23:44.132Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:23:44.179Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:44.179Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"GET /usuarios HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:23:44.179Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:23:44.241Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:44.241Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:23:44.241Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"GET /usuarios HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:23:44.241Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:23:44.257Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:44.257Z"}
+{"level":"info","message":"Usuário inserido na base.","timestamp":"2017-10-29T17:23:44.757Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:23:44.757Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:23:44.773Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:44.773Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"},"level":"info","message":"","timestamp":"2017-10-29T17:23:44.773Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:23:44.773Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:44 +0000] \"POST /usuario/usuario/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:23:44.773Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:23:44.788Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:23:44.788Z"}
+{"message":"ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'","stack":"Error: ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'\n    at Query.Sequence._packetToError (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:52:14)\n    at Query.ErrorPacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:145:48)\n    at Connection.query (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:208:25)\n    at UsuarioDao.salva (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\persistencia\\UsuarioDao.js:1:2225)\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\controllers\\postUsuario.js:1:4458\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\processor\\facebook.js:1:7949\n    at Request._callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\lib\\fb.js:501:5)\n    at Request.self.callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:186:22)\n    at emitTwo (events.js:87:13)\n    at Request.emit (events.js:172:7)\n    at Request.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1163:10)\n    at emitOne (events.js:77:13)\n    at Request.emit (events.js:169:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1085:12)\n    at IncomingMessage.g (events.js:260:16)\n    at emitNone (events.js:72:20)\n    at IncomingMessage.emit (events.js:166:7)\n    at endReadableNT (_stream_readable.js:921:12)\n    at nextTickCallbackWith2Args (node.js:442:9)\n    at process._tickCallback (node.js:356:17)","code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry '100001718509097' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"INSERT INTO usuario SET `facebookId` = '100001718509097', `first_name` = 'Edson', `middle_name` = 'não especificado', `last_name` = 'Fragnan', `name` = 'Edson Fragnan', `birthday` = 'não especificado', `hometown` = 'não especificado', `locale` = 'não especificado', `gender` = 'não especificado', `public_key` = 'não especificado', `website` = 'não especificado'","level":"info","timestamp":"2017-10-29T17:23:45.226Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:45 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 412 -\n","timestamp":"2017-10-29T17:23:45.241Z"}
+{"level":"info","message":"Rota acessada: / - GET","timestamp":"2017-10-29T17:23:45.241Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:23:45 +0000] \"GET / HTTP/1.1\" 200 36\n","timestamp":"2017-10-29T17:23:45.241Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.832Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.848Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.863Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.863Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.863Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.895Z"}
+{"level":"info","message":"Banco de dados criado: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.910Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:25:42.910Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:25:42.910Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:42.910Z"}
+{"level":"info","message":"Tabela criada.","timestamp":"2017-10-29T17:25:42.926Z"}
+{"level":"info","message":"Usuário deletado.","timestamp":"2017-10-29T17:25:42.973Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:42 +0000] \"DELETE /usuarios/usuario/100001718509097 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:25:42.973Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - DELETE","timestamp":"2017-10-29T17:25:43.004Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:43.004Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:25:43.004Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"DELETE /usuarios/usuario/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:25:43.004Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"DELETE /usuario/facebook/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:25:43.020Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:25:43.082Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:43.082Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"GET /usuarios/usuario/100001718509097 HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:25:43.098Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:25:43.098Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:43.098Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"100001718509097000000"},"level":"info","message":"","timestamp":"2017-10-29T17:25:43.098Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"GET /usuarios/usuario/100001718509097000000 HTTP/1.1\" 400 98\n","timestamp":"2017-10-29T17:25:43.113Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:25:43.113Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:43.113Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:25:43.129Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"GET /usuarios/usuario/000 HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:25:43.129Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:25:43.129Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"GET /usuario/facebook/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:25:43.645Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:25:43.645Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:25:43.645Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:43 +0000] \"GET /usuario/facebook/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:25:43.645Z"}
+{"level":"info","message":"Rota acessada: /usuario/facebook/:id - GET","timestamp":"2017-10-29T17:25:43.660Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"FjitlX4AbJ8","level":"info","timestamp":"2017-10-29T17:25:44.098Z"}
+{"message":"(#803) Some of the aliases you requested do not exist: 000","type":"OAuthException","code":803,"fbtrace_id":"FjitlX4AbJ8","level":"info","timestamp":"2017-10-29T17:25:44.098Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"GET /usuario/facebook/000 HTTP/1.1\" 404 -\n","timestamp":"2017-10-29T17:25:44.098Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:25:44.160Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:44.160Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"GET /usuarios HTTP/1.1\" 200 304\n","timestamp":"2017-10-29T17:25:44.176Z"}
+{"level":"info","message":"Rota acessada: /usuarios - GET","timestamp":"2017-10-29T17:25:44.238Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:44.238Z"}
+{"level":"info","message":"Não possui registros.","timestamp":"2017-10-29T17:25:44.254Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"GET /usuarios HTTP/1.1\" 204 -\n","timestamp":"2017-10-29T17:25:44.254Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:25:44.270Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:44.270Z"}
+{"level":"info","message":"Usuário inserido na base.","timestamp":"2017-10-29T17:25:44.816Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 200 315\n","timestamp":"2017-10-29T17:25:44.832Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - GET","timestamp":"2017-10-29T17:25:44.832Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:44.832Z"}
+{"0":{"param":"facebookId","msg":"Identificador facebook inválido.","value":"1.0000171850909712e+21"},"level":"info","message":"","timestamp":"2017-10-29T17:25:44.832Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"GET /usuarios/usuario/1.0000171850909712e+21 HTTP/1.1\" 400 99\n","timestamp":"2017-10-29T17:25:44.832Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:44 +0000] \"POST /usuario/usuario/000 HTTP/1.1\" 404 31\n","timestamp":"2017-10-29T17:25:44.848Z"}
+{"level":"info","message":"Rota acessada: /usuarios/usuario/:id - POST","timestamp":"2017-10-29T17:25:44.863Z"}
+{"level":"info","message":"Base de dados acessada: facebook_luizalabs_test","timestamp":"2017-10-29T17:25:44.863Z"}
+{"message":"ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'","stack":"Error: ER_DUP_ENTRY: Duplicate entry '100001718509097' for key 'PRIMARY'\n    at Query.Sequence._packetToError (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:52:14)\n    at Query.ErrorPacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\protocol\\Protocol.js:145:48)\n    at Connection.query (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\mysql\\lib\\Connection.js:208:25)\n    at UsuarioDao.salva (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\persistencia\\UsuarioDao.js:1:2225)\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\controllers\\postUsuario.js:1:4458\n    at C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\processor\\facebook.js:1:7949\n    at Request._callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\lib\\fb.js:501:5)\n    at Request.self.callback (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:186:22)\n    at emitTwo (events.js:87:13)\n    at Request.emit (events.js:172:7)\n    at Request.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1163:10)\n    at emitOne (events.js:77:13)\n    at Request.emit (events.js:169:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Edson Fragnan\\Desktop\\Projetos\\facebook_luizalabs\\node_modules\\fb\\node_modules\\request\\request.js:1085:12)\n    at IncomingMessage.g (events.js:260:16)\n    at emitNone (events.js:72:20)\n    at IncomingMessage.emit (events.js:166:7)\n    at endReadableNT (_stream_readable.js:921:12)\n    at nextTickCallbackWith2Args (node.js:442:9)\n    at process._tickCallback (node.js:356:17)","code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry '100001718509097' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"INSERT INTO usuario SET `facebookId` = '100001718509097', `first_name` = 'Edson', `middle_name` = 'não especificado', `last_name` = 'Fragnan', `name` = 'Edson Fragnan', `birthday` = 'não especificado', `hometown` = 'não especificado', `locale` = 'não especificado', `gender` = 'não especificado', `public_key` = 'não especificado', `website` = 'não especificado'","level":"info","timestamp":"2017-10-29T17:25:45.317Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:45 +0000] \"POST /usuarios/usuario/100001718509097 HTTP/1.1\" 412 -\n","timestamp":"2017-10-29T17:25:45.317Z"}
+{"level":"info","message":"Rota acessada: / - GET","timestamp":"2017-10-29T17:25:45.317Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Oct/2017:17:25:45 +0000] \"GET / HTTP/1.1\" 200 36\n","timestamp":"2017-10-29T17:25:45.317Z"}
